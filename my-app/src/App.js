@@ -1,7 +1,7 @@
 import "./App.css";
-
-function Booklist() {
-  return <section>This is a booklis.</section>;
+import Booklist from "./components/Booklist";
+function App() {
+  return <Booklist />;
 }
 
-export default Booklist;
+export default App;
