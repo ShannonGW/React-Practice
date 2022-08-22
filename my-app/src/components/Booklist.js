@@ -4,6 +4,10 @@ export default function Booklist() {
   return (
     <section>
       <Book />
+      <Book />
+      <Book />
+      <Book />
+      <Book />
     </section>
   );
 }
@@ -12,8 +16,8 @@ const Book = () => {
   return (
     <article>
       <Image></Image>
-      <Title></Title>
-      <Author></Author>
+      <Title />
+      <Author />
     </article>
   );
 };
