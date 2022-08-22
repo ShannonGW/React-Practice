@@ -12,6 +12,8 @@ const Book = () => {
   return (
     <article>
       <Image></Image>
+      <Title></Title>
+      <Author></Author>
     </article>
   );
 };
@@ -22,3 +24,7 @@ const Image = () => (
     alt="How Rich People Think"
   />
 );
+
+const Title = () => <h1>How Rich People Think</h1>;
+
+const Author = () => <h4>Steve Siebold</h4>;
