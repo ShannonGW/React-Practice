@@ -14,6 +14,7 @@ export default function Booklist() {
 
 const Book = () => {
   const title = "How Rich People Think";
+  const author = "Steve Siebold";
   return (
     <article className="book">
       <img
@@ -21,7 +22,7 @@ const Book = () => {
         alt="How Rich People Think"
       />
       <h1>{title}</h1>
-      <h4>Steve Siebold</h4>
+      <h4>{author}</h4>
     </article>
   );
 };
