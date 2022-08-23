@@ -8,6 +8,12 @@ const firstBook = {
   author: "Steve Siebold",
 };
 
+const secondBook = {
+  img: "https://images-na.ssl-images-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg",
+  title: "Atomic Habits",
+  author: "James Clear",
+};
+
 export default function Booklist() {
   return (
     <section className="booklist">
@@ -17,6 +23,12 @@ not where it is created.  */}
         img={firstBook.img}
         title={firstBook.title}
         author={firstBook.author}
+      />
+
+      <Book
+        img={secondBook.img}
+        title={secondBook.title}
+        author={secondBook.author}
       />
     </section>
   );
