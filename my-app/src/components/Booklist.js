@@ -1,26 +1,22 @@
 import React from "react";
 
+//setup vars
+const title = "How Rich People Think";
+const author = "Steve Siebold";
+const img = "https://m.media-amazon.com/images/I/41iBc3SbWBL.jpg";
+
 export default function Booklist() {
   return (
     <section className="booklist">
-      <Book />
-      <Book />
-      <Book />
-      <Book />
       <Book />
     </section>
   );
 }
 
 const Book = () => {
-  const title = "How Rich People Think";
-  const author = "Steve Siebold";
   return (
     <article className="book">
-      <img
-        src="https://m.media-amazon.com/images/I/41iBc3SbWBL.jpg"
-        alt="How Rich People Think"
-      />
+      <img src={img} />
       <h1>{title}</h1>
       <h4>{author.toUpperCase()}</h4>
     </article>
