@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Booklist() {
   return (
-    <section>
+    <section className="booklist">
       <Book />
       <Book />
       <Book />
