@@ -30,5 +30,12 @@ const Image = () => (
 );
 
 const Title = () => <h1>How Rich People Think</h1>;
-
-const Author = () => <h4>Steve Siebold</h4>;
+/* the {} inside of the {} just means there's an object. The first {} indicates
+we are using JS inside of the JSX and the second {} simply means an object. 
+There is really no special syntax here.
+*/
+const Author = () => (
+  <h4 style={{ color: "#617d98", fontSize: "0.75rem", marginTop: "0.25rem" }}>
+    Steve Siebold
+  </h4>
+);

@@ -30,3 +30,7 @@ body {
   border: 1rem;
   padding: 1rem 2rem;
 }
+
+.book h1 {
+  margin-top: 0.5rem;
+}
