@@ -14,7 +14,7 @@ export default function Booklist() {
 
 const Book = () => {
   return (
-    <article>
+    <article className="book">
       <Image></Image>
       <Title />
       <Author />
