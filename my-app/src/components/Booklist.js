@@ -22,7 +22,7 @@ const Book = () => {
         alt="How Rich People Think"
       />
       <h1>{title}</h1>
-      <h4>{author}</h4>
+      <h4>{author.toUpperCase()}</h4>
     </article>
   );
 };
