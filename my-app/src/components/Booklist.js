@@ -13,12 +13,15 @@ export default function Booklist() {
   );
 }
 
-const Book = () => {
+const Book = (props) => {
+  console.log("props", props); //console.log above return
+  //when we console.log, we see that props is an object
   return (
     <article className="book">
       <img src={img} />
       <h1>{title}</h1>
       <h4>{author.toUpperCase()}</h4>
+      {console.log("props", props)} {/* you can also console log in JSX */}
     </article>
   );
 };
