@@ -13,13 +13,14 @@ export default function Booklist() {
 }
 
 const Book = () => {
+  const title = "How Rich People Think";
   return (
     <article className="book">
       <img
         src="https://m.media-amazon.com/images/I/41iBc3SbWBL.jpg"
         alt="How Rich People Think"
       />
-      <h1>How Rich People Think</h1>
+      <h1>{title}</h1>
       <h4>Steve Siebold</h4>
     </article>
   );
