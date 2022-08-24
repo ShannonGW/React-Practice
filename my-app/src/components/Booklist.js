@@ -13,6 +13,11 @@ const books = [
   },
 ];
 const names = ["Shannon", "Amy", "Fran"];
+const newName = names.map((name) => {
+  console.log("name", name);
+});
+console.log("newName", newName);
+
 export default function Booklist() {
   return <section className="booklist">{names}</section>;
 }
