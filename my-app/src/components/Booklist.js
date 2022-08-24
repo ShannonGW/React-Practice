@@ -1,41 +1,22 @@
 import React from "react";
 
-//setup vars
-
-const firstBook = {
-  img: "https://m.media-amazon.com/images/I/41iBc3SbWBL.jpg",
-  title: "How Rich People Think",
-  author: "Steve Siebold",
-};
-
-const secondBook = {
-  img: "https://images-na.ssl-images-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg",
-  title: "Atomic Habits",
-  author: "James Clear",
-};
-
+const books = [
+  {
+    img: "https://m.media-amazon.com/images/I/41iBc3SbWBL.jpg",
+    title: "How Rich People Think",
+    author: "Steve Siebold",
+  },
+  {
+    img: "https://images-na.ssl-images-amazon.com/images/I/51-nXsSRfZL._SX328_BO1,204,203,200_.jpg",
+    title: "Atomic Habits",
+    author: "James Clear",
+  },
+];
 export default function Booklist() {
   return (
     <section className="booklist">
       {/* we need to pass the props object where we render the object,
 not where it is created.  */}
-      <Book
-        img={firstBook.img}
-        title={firstBook.title}
-        author={firstBook.author}
-      >
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-          eos, consectetur odio qui porro ea! Magnam numquam cupiditate quos
-          consectetur.
-        </p>
-      </Book>
-
-      <Book
-        img={secondBook.img}
-        title={secondBook.title}
-        author={secondBook.author}
-      />
     </section>
   );
 }
