@@ -37,13 +37,22 @@ not where it is created.  */}
 const Book = (props) => {
   console.log("props", props); //console.log above return
   //when we console.log, we see that props is an object
+
+  //destructure props to avoid typing it repeatedly
+  const { img, title, author } = props;
   return (
     <article className="book">
-      <img src={props.img} />
-      <h1>{props.title}</h1>
-      <h4>{props.author.toUpperCase()}</h4>
-      {console.log("props", props)} {/* you can also console log in JSX */}
+      <img src={img} />
+      <h1>{title}</h1>
+      <h4>{author.toUpperCase()}</h4>
     </article>
+
+    // {console.log("props", props)} {/* you can also console log in JSX */}
+    // <article className="book">
+    /* <img src={props.img} />
+      <h1>{props.title}</h1>
+      <h4>{props.author.toUpperCase()}</h4> */
+    // </article>
   );
 };
 
