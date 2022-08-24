@@ -52,7 +52,6 @@ const Book = (props) => {
       <img src={img} alt="" />
       <h1>{title}</h1>
       <h4>{author.toUpperCase()}</h4>
-      {props.children} {/* children props */}
     </article>
 
     // {console.log("props", props)} {/* you can also console log in JSX */}
