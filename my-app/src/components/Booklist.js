@@ -23,7 +23,13 @@ not where it is created.  */}
         img={firstBook.img}
         title={firstBook.title}
         author={firstBook.author}
-      />
+      >
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+          eos, consectetur odio qui porro ea! Magnam numquam cupiditate quos
+          consectetur.
+        </p>
+      </Book>
 
       <Book
         img={secondBook.img}
@@ -34,17 +40,19 @@ not where it is created.  */}
   );
 }
 
-const Book = ({ img, title, author }) => {
-  console.log("props", props); //console.log above return
+// const Book = ({ img, title, author, children }) => {
+const Book = (props) => {
+  // console.log("props", props); //console.log above return
   //when we console.log, we see that props is an object
 
   //destructure props to avoid typing it repeatedly
-  // const { img, title, author } = props;
+  const { img, title, author } = props;
   return (
     <article className="book">
-      <img src={img} />
+      <img src={img} alt="" />
       <h1>{title}</h1>
       <h4>{author.toUpperCase()}</h4>
+      {props.children} {/* children props */}
     </article>
 
     // {console.log("props", props)} {/* you can also console log in JSX */}
