@@ -34,12 +34,12 @@ not where it is created.  */}
   );
 }
 
-const Book = (props) => {
+const Book = ({ img, title, author }) => {
   console.log("props", props); //console.log above return
   //when we console.log, we see that props is an object
 
   //destructure props to avoid typing it repeatedly
-  const { img, title, author } = props;
+  // const { img, title, author } = props;
   return (
     <article className="book">
       <img src={img} />
