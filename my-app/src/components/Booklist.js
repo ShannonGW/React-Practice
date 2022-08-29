@@ -14,5 +14,11 @@ const books = [
 ];
 
 export default function Booklist() {
-  return <section className="booklist">{newNames}</section>;
+  return (
+    <section className="booklist">
+      {books.map((book) => {
+        return "hello";
+      })}
+    </section>
+  );
 }
