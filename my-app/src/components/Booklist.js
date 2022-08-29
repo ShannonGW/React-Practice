@@ -12,12 +12,6 @@ const books = [
     author: "James Clear",
   },
 ];
-const names = ["Shannon", "Amy", "Fran"];
-const newNames = names.map((name) => {
-  // console.log("name", name);
-  return <h1>{name}</h1>;
-});
-console.log("newNames", newNames);
 
 export default function Booklist() {
   return <section className="booklist">{newNames}</section>;
