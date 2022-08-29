@@ -11,6 +11,11 @@ const books = [
     title: "Atomic Habits",
     author: "James Clear",
   },
+  {
+    img: "https://m.media-amazon.com/images/I/81ZLwAwD-ML._AC_UL640_FMwebp_QL65_.jpg",
+    title: "Rich Dad Poor Dad",
+    author: "Robert T. Kiyosaki",
+  },
 ];
 
 export default function Booklist() {
