@@ -30,6 +30,7 @@ body {
   background: #fff;
   border: 1rem;
   padding: 1rem 2rem;
+  max-width: 250px;
 }
 
 .book h1 {
@@ -44,4 +45,8 @@ body {
 
 .book p {
   margin-top: 0.5rem;
+}
+
+img {
+  max-height: 300px;
 }
