@@ -31,14 +31,15 @@ export default function Booklist() {
   );
 }
 
-const Book = (props) => {
-  console.log(props);
-  const { img, title, author } = props;
+const Book = ({ img, title, author }) => {
+  //attribute, eventHandler
+  //onClick, onMouseOver
   return (
     <article className="book">
-      <img src={img} alt=""></img>
+      <img src={img} alt="" />
       <h1>{title}</h1>
       <h4>{author}</h4>
+      <button></button>
     </article>
   );
 };
